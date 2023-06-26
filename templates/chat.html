@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot für die VHS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #c62828;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+        
+        .chat-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .chat-messages {
+            padding: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .message {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        .user-message {
+            margin-left: auto;
+            max-width: 70%;
+            background-color: #ffcdd2;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        }
+        
+        .bot-message {
+            margin-right: auto;
+            max-width: 70%;
+            background-color: #ffebee;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        }
+        
+        .input-container {
+            padding: 20px;
+            background-color: #e57373;
+            display: flex;
+            align-items: center;
+        }
+        
+        .input-container input {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+        }
+        
+        .input-container button {
+            padding: 8px 15px;
+            font-size: 14px;
+            color: white;
+            background-color: #c62828;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chatbot für die VHS</h1>
+    </div>
+    
+    <div class="chat-container">
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Hallo! Wie kann ich Ihnen helfen?
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Nachricht eingeben">
+            <button id="send-button">➜</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Event-Handler für den Senden-Button
+            $('#send-button').click(function() {
+                var message = $('#user-input').val();
+                addUserMessage(message);
+                $('#user-input').val('');
+
+                // AJAX-Anfrage an den Server senden
+                $.ajax({
+                    url: '/chatbot',
+                    type: 'POST',
+                    data: {message: message},
+                    success: function(response) {
+                        addBotMessage(response);
+                    }
+                });
+            });
+        });
+        // Chatbot JavaScript Code
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+
+        // Funktion zum Hinzufügen einer Benutzer-Nachricht zum Chat
+        function addUserMessage(message) {
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('message', 'user-message');
+            userMessage.textContent = message;
+            chatMessages.appendChild(userMessage);
+            chatMessages.scrollTop = chatMessages.scrollHeight; // Zum Ende des Chats scrollen
+        }
+
+        // Funktion zum Hinzufügen einer Bot-Antwort zum Chat
+        function addBotMessage(message) {
+            const botMessage = document.createElement('div');
+            botMessage.classList.add('message', 'bot-message');
+            botMessage.textContent = message;
+            chatMessages.appendChild(botMessage);
+            chatMessages.scrollTop = chatMessages.scrollHeight; // Zum Ende des Chats scrollen
+        }
+
+      
+        // Event-Handler für die Eingabetaste
+        userInput.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                sendButton.click();
+            }
+        });
+    </script>
+</body>
+</html>
