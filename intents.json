@@ -1,0 +1,57 @@
+{"intents": [
+    {"tag": "begruessung",
+    "patterns": ["hello", "hey", "hi", "good day", "Greetings", "what's up?", "how is it going?", "Hallo", "Guten Morgen", "Guten Nachmittag", "Guten Tag", "Guten Abend", "Hallo du!"],
+    "responses": ["Hallo", "Hey!", "Whas kann ich für dich tun?"],
+    "context_set": ""
+    },
+    {"tag": "abschied",
+    "patterns": ["cyo", "see you later", "Goodbye", "I am leaving", "Have a good day", "tsüss", "ByeBye", "nett dich kennengelernt zu haben", "Ich muss nun gehen", "bis später", "Auf Wiedersehen"],
+    "responses": ["Schade das du gehen musst :(", "Goodbye!", "Man hört sich", "Auf Wiedersehen!","Ich hoffe, ich konnte Ihnen weiterhelfen."],
+    "context_set": ""
+    },
+    {"tag": "alter",
+    "patterns": ["How old", "How old are you?", "What is your age?", "Age?", "How old is this Bot?", "Wie alt bist du?"],
+    "responses": ["Ich bin ein Monat alt", "Ich bin ein Monat jung!"],
+    "context_set": ""
+    },
+    {"tag": "gut",
+    "patterns": ["Wie geht es dir?", "Fühlst du dich gut?", "Wie fühlst du dich?", "Wie geht's?", "Geht es dir gut?"],
+    "responses": ["Mir geht es blendend", "Ich fühle mich super:)"],
+    "context_set": ""
+    },
+    {"tag": "kursestornieren",
+    "patterns": ["Ich will einen Kurs stonieren. An wen soll ich mich wenden?", "Können Sie für mich den Kurs stonieren?", "Kannst du den Kurs absagen?", "Ich will an dem Kurs nicht mehr teilnehmen und das Geld zurückerstattet bekommen.", "Ich will den Kurs stonieren und das Geld zurück!"],
+    "responses": ["Danke für Ihre Nachricht! Bitte senden Sie diese Informationen an die Volkshochschule, an dem der Kurs stattfindet oder stattgefunden hatte. Nennen Sie bitte Ihren Namen, Kursnummer und Stonierungsgrund und die Berliner Volkshochschulen werden die Stonierungsanfrage beantworten können."],
+    "context_set": ""
+    },
+    {"tag": "kurssuche",
+    "patterns": ["Wo kann ich nach Kursen suchen?", "Weist du wo man alle Kurse finden kann, die zurzeit angeboten werden?", "Werden deutsch Kurse angeboten?", "Welche Kurse unterrichten die Berliner Volkshochschulen zurzeit?"],
+    "responses": ["Alle Informationen zu den angebotenen Kursen finden Sie unter der Internetseite: https://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseSearch.aspx", "Die Informationen können Sie auf der Internetseite: https://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseSearch.aspx auffinden."],
+    "context_set": ""
+    },
+    {"tag": "kursbuchung",
+    "patterns": ["Wie können die Kurse gebucht werden?", "Wie funktioniert die Kursbuchung?", "Wie können die Kurse gekauft werden?", "Wo kann ich für meine wunsch Kurse bezahlen?", "Wie verläuft die Kursbuchung?"],
+    "responses": ["Sie müssen auf der Internetseite: https://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseSearch.aspx einen Kursauswählen und dann zum Warenkorb klicken. Nachdem Sie den Kurs im Warenkorb sehen könnt, hab ihr die Möglichkeit den Kurs mittel einem Anmeldeformular zu bazhlen, denn dafür ist keine Anmeldung notwendig. Die zweite Möglichkeit ist den Kurs duch die Anmeldung zu bezahlen, weil Sie Ihre Kontodaten angeben müssen und die letzte Möglichkeit ist es sich auf der Internetseite zu registrieren."],
+    "context_set": ""
+    },
+    {"tag": "cloudinfo",
+    "patterns": ["Was ist die VHS Cloud?", "Welche Funktion hat die VHS Cloud?", "Wieso gibt es die Cloud", "Was wird bei der Cloud für Kurse angeboten?", "Wieso sollte man die Cloud nutzen?"],
+    "responses": ["MDie vhs.cloud ist die digitale Lernplattform der deutschen Volkshochschulen. Hier führen über 800 Einrichtungen digital unterstützte Kurse und Lernangebote durch. Außerdem vernetzen sich hier die vielen tausend Mitarbeiter*innen und Kursleitungen deutschlandweit."],
+    "context_set": ""
+    },
+    {"tag": "bamfkurse",
+    "patterns": ["Werden BAMF Kurse angeboten?", "Gibt es Kurse die vom Bundeministerium für Arbeit, Migration und Flüchtiglinge angeboten werden?", "Wo können Bamf Kurse gefunden werdne?", "Wo findnen Integrationskurse statt?", "Sind Bamf Kurse vorhanden?"],
+    "responses": ["Unter der Internetseite: https://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseList.aspx finden Sie die derzeitig angebotene Kurse. Sie können die Suche auf ein bestimmnten Bezirk eingerenzen."],
+    "context_set": ""
+    },
+    {"tag": "bamfbedeutung",
+    "patterns": ["Wofür steht überhaupt BAMF?", "Was macht BAMF?", "Welche Aufgaben hat BAMF?", "Wieso ist BAMF so wichtig?", "Bedeutung Bamf"],
+    "responses": ["Das BAMF ist zuständig für die Durchführung von Asylverfahren und die Zuerkennung des Flüchtlingsschutzes in Deutschland. Zugleich koordiniert es bundesweit die Förderung der Integration. Zur Bandbreite der Aufgaben gehört auch die Migrationsforschung. Grundlage ist ein gesetzlich verankerter Forschungsauftrag zur Gewinnung analytischer Aussagen zur Steuerung der Migration. Die hier gewonnenen Daten und Erkenntnisse ermöglichen eine kompetente Beratung der Politik und anderer gesellschaftlicher Akteure. Weiteres finden Sie auf der Internetseite: https://www.bmi.bund.de/SharedDocs/behoerden/DE/bamf.html"],
+    "context_set": ""
+    },
+    {"tag": "meinekursecloud",
+    "patterns": ["Wo finde ich meine Kurse in der Cloud?", "Wo kann ich meine Kurse in der Cloud einsehen?", "Wo befinden sich die Kurse, die ich in der Cloud habe?", "Wo kann ich sehen, ob ich schon irgendwelche Kurse in der Cloud habe?", "Wurden meine Cloud Kurse mir zugeordnet?"],
+    "responses": ["Sie müssen oben rechts auf die drei blaue Zeilen klicken und dann 'Meine Kurse' auswählen."],
+    "context_set": ""
+    }
+]}
