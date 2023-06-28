@@ -1,0 +1,9 @@
+flask
+nltk
+numpy
+tflearn
+tensorflow
+random
+json
+pickle
+ftfy
