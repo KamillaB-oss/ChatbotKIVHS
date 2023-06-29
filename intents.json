@@ -53,5 +53,100 @@
     "patterns": ["Wo finde ich meine Kurse in der Cloud?", "Wo kann ich meine Kurse in der Cloud einsehen?", "Wo befinden sich die Kurse, die ich in der Cloud habe?", "Wo kann ich sehen, ob ich schon irgendwelche Kurse in der Cloud habe?", "Wurden meine Cloud Kurse mir zugeordnet?"],
     "responses": ["Sie müssen oben rechts auf die drei blaue Zeilen klicken und dann 'Meine Kurse' auswählen."],
     "context_set": ""
+    },
+    {"tag": "meinegruppecloud",
+    "patterns": ["Wo kann ich die Cloudgruppen in der Cloud finden?", "Wo befinden sich die Cloudgruppen?", "Wo kann ich die Cloudgruppen einsehen?", "Ich will wissen wo ich in der Cloud meine zugeteilten Gruppen finden kann.", "Kannst du mir sagen wo ich meine Gruppen in der Cloud finde?"],
+    "responses": ["Sie müssen oben rechts auf die drei blaue Zeilen klicken und dann 'Meine Gruppen' auswählen."],
+    "context_set": ""
+    },
+    {"tag": "kursebeantragencloud",
+    "patterns": ["Ich will einen Cloudkurs für meinen Kurs haben, wie kriege ich das hin?", "Ich brauche einen Cloudkurs, bei wem soll ich mich melden?", "Ich will einen Cloudraum beantragen, wie und wo muss ich was machen?", "Wie kann ich meine Cloudräume erstellen?", "Wie ist das Verfahren, wenn ich mir ein Cloudraum beantragen möchte?"],
+    "responses": ["Damit Sie einen Cloudraum beantragen könnt, müssen Sie in der Cloud unter der Gruppe 'Informationen für Kursleitende' ein Formular ausfüllen und abschicken. Die IT-Abteilung des Servicezentrums erhält diesen Antrag und wird für Sie einen Cloudraum einrichten. Sie haben ebenso so die Möglichkeit den Auftrag einem Mitarbeiter Ihrer Volkshochschule zu beauftragen."],
+    "context_set": ""
+    },
+    {"tag": "kurseloeschencloud",
+    "patterns": ["Wie können die Cloudräume gelöscht werden?", "Können Cloudkurse gelöscht werden?", "Wo kann man beantragen, dass die Kurse gelöscht werden sollen?", "Können Cloudräume gelöscht werden?", "Wo können Cloudräume gelöscht werden?"],
+    "responses": ["Damit Sie einen Cloudraum gelöschen können, müssen Sie in der Cloud unter der Gruppe 'Informationen für Kursleitende' ein Formular ausfüllen und abschicken. Die IT-Abteilung des Servicezentrums erhält diesen Antrag und wird für Sie den Cloudraum löschen. Sie haben ebenso so die Möglichkeit den Auftrag einem Mitarbeiter Ihrer Volkshochschule zu beauftragen."],
+    "context_set": ""
+    },
+    {"tag": "testkursebeantragencloud",
+    "patterns": ["Kann ich einen Testkurs beantragen?", "Kann ich Cloudräume beantragen, um die Räume testen zu können?", "Können Testcloudräume beantragt werden?", "Kann ich Cloudräume zum testen beantragen?", "Wo werden Testkurse in der Cloud beantragt?"],
+    "responses": ["Damit Sie einen Testcloudraum beantragen könnt, müssen Sie in der Cloud unter der Gruppe 'Informationen für Kursleitende' ein Formular ausfüllen und abschicken. Die IT-Abteilung des Servicezentrums erhält diesen Antrag und wird für Sie einen Testcloudraum einrichten. Sie haben ebenso so die Möglichkeit den Auftrag einem Mitarbeiter Ihrer Volkshochschule zu beauftragen."],
+    "context_set": ""
+    },
+    {"tag": "cloudkurseausmeinercloudentfernen",
+    "patterns": ["Wie können die Kurse die nicht mehr verwendet werden aus meinen Kursen entfernt werden?", "Bei mir werden noch Kurse angezeigt, die nicht mehr stattfinden. Wie kann ich diese entfernen?", "Gibt es eine Möglichkeit, wie ich die Kurse aus meine Kurse entfernen kann?", "An wen soll ich mich wenden, wenn noch die Kurse angezeigt werden, die schon beendet wurden?", "Unter meine Kurse sind noch Kursräume vorhanden, die nicht mehr gültig sind, wie kann ich sie aus meine Kurse löschen?"],
+    "responses": ["Wenn Sie Teilnehmer*in sind, dann müssen Sie es Ihrer Kursleiter*in Bescheid geben, dass Sie beantragen soll, dass der Kurs gelöscht werden muss. Wenn Sie Kursleiter*in sind, dann beantragen Sie die Löschung des Kurses in der Cloud unter der Gruppe 'Informationen für Kursleitende' oder senden Sie einen Auftrag an die VHS Mitarbeiter*innen."],
+    "context_set": ""
+    },
+    {"tag": "ermaessigung",
+    "patterns": ["Was bedeutet Ermäßigung?", "Was wird unter Ermäßigung verstanden?", "Welche Bedeutung hat das Wort Ermäßigung?", "Definition Ermäßigung", "Was heiißt Ermäßigung?"],
+    "responses": ["Das bedeutet, dass der Preis der angebotenen Kurse bei den Volkshochschulen gesenkt werden."],
+    "context_set": ""
+    },
+    {"tag": "ermaessigungvoraussetzung",
+    "patterns": ["Wann bekomme ich den ermäßigten Preis?", "Bin ich für den ermässigten Preis zugelassen?", "Wer kann alles eine Ermäßigung bekommen?", "Kann ich eine Ermäßigung erhalten?", "Wer ist alles zugelassen eine Ermäßigung zu bekommen?"],
+    "responses": ["Der Ausweis, bzw. Bescheid ALG I reicht aus, um eine Ermäßigung zu erhalten."],
+    "context_set": ""
+    },
+    {"tag": "jobangebote",
+    "patterns": ["Gibt es irgendwelche Jobangebote der Berliner Volkshochschulen?", "Wo kann ich einsehen, ob es zurzeit Jobangebote bei den Berliner Volkshochschulen vorhanden sind?", "Welche Jobangebote gibt es?", "Sind die Berliner Volkshochschulen zurzeit auf Arbeitnehmersuche?", "Stellen die Berliner Volkshochschulen Jobs aus?"],
+    "responses": ["Wenn Sie Interesse haben bei den Berliner Volkshochschulen zu arbeiten, dann informieren Sie sich auf der Internetseite: https://karriereportal-stellen.berlin.de/ und bleiben Sie auf dem aktuellsten Stand."],
+    "context_set": ""
+    },
+    {"tag": "praktikumsplaetze",
+    "patterns": ["Haben Sie offene Stellen für Praktikanten?", "Nehmen Sie Praktikanten an?", "Ich will bei Ihnen ein Praktikum durchführem, wo kann ich mich anmelden?", "Haben Sie offene Praktikumsplätze?", "Kann ich mich bei Ihnen Bewerben für ein Praktikumsplatz?"],
+    "responses": ["Falls Sie wissen wollen, ob es derzeit offene Praktikumsplätze gibt, dann erkunden Sie sich auf der Internetseite: https://www.meinpraktikum.de/suche?t_what=Berliner+Volkshochschulen&type=jobposting&t_radius=25"],
+    "context_set": ""
+    },
+    {"tag": "bbbbedeutung",
+    "patterns": ["Was bedeutet BBB?", "Wofür steht BBB?", "Wofür nutzt man BBB?", "Wofür wird BBB verwendet?", "Nutzen die Berliner Volkshochschulen BigBlueButton?", "Wofür wird Big Blue Button eingesetzt?"],
+    "responses": ["BBB ist die Abkürzung für BigBlueButton. Es ist ein Videokonferenztool, welches die Berliner Volkshochschulen einsetzen, um online Kurse durchführen zu können."],
+    "context_set": ""
+    },
+    {"tag": "bbbfunktionsweise",
+    "patterns": ["Wie funtkioniert BBB?", "Was ist die Funktionsweise von BigBlueButton?", "Wie kann Big Blue Button verwendet werden?", "Funktionsweise BBB", "Wie wird BBB benutzt?"],
+    "responses": ["Nachdem Sie sich für einen Kurs angemeldet und bezahlt haben, erhalten Sie einen 6-stelligen Code, den Sie in der Cloud eingeben können, um den Kurs beizutreten. Nachdem die Kursleitende die Anfrage bestätigt haben, können Sie in der Übersicht des Kurses auf der rechten Seite Konferenz auswählen. Danach haben Sie die Option der Konferent des Kurses beizutreten, falls dieser schon gestartet wurde."],
+    "context_set": ""
+    },
+    {"tag": "bbbmeetingsaufzeichnung",
+    "patterns": ["Können die BBB Meetings aufgenommen werden?", "Gibt es die Möglichkeit Meetings im BigBlueButton aufzuzeichnen?", "Können in Big Blue Button Aufzeichnungen gestartet werden?", "Gibt es in BBB die Funktion der Aufzeichnung des Kurses?", "Können Teilnehmer*innen oder Kursleiter*innen die Kurse in BBB aufnehmen?"],
+    "responses": ["Die Funktion wird wegen datenschutzrechtlichen Gründen nicht unterstützt."],
+    "context_set": ""
+    },
+    {"tag": "bbbwhiteboerddefekt",
+    "patterns": ["Wieso funktioniert das WhiteBoard auf BBB nicht?", "Wieso kann das White Board in BigBluebutton nicht benutzt werden?", "Wieso funktioniert die weiße Leinwand in Big Blue Button nicht?", "Wieso kann das white Board nicht verwendet werden", "Wieso funktioniert das white board nur auf einer hälfte und auf der anderen nicht mehr?"],
+    "responses": ["Das ist ein Funktionsproblem, welches zurzeit von BigBlueButton gelöst wird."],
+    "context_set": ""
+    },
+    {"tag": "bbbkamerafunktioniertnicht",
+    "patterns": ["Wieso funktioniert meine Kamera nicht?", "Warum funktioniert die Kamera auf BigBlueButton nicht?", "Warum wird meine Kamera nicht in Big Blue Button angezeigt?", "Wie kann ich meiner Kamera die notwendigen Berechtigungen zuweisen, sodass ich sie in BBB verwenden kann?", "Wieso können die anderen Teilnehmer*innen mich nicht sehen?"],
+    "responses": ["Sie müssen darauf achten, dass die Kamera mit dem Computer angeschlossen ist und Sie BBB die Berechtigungen zugewiesen haben (oben auf der Suchleiste links auf den Schloss Symbol klingen auch schauen das die rechte für die Kamera vergeben sind). Falls Sie mehrere Kameras haben, müssen Sie darauf achten, dass die richtige ausgewählt worden ist."],
+    "context_set": ""
+    },
+    {"tag": "teilnahmebescheinigung",
+    "patterns": ["Von wo bekomme ich eine Teilnahmebescheinigung von einem Kurs der vor 2 Jahren stattgefunden hatte?", "Kann ich eine Teilnahmebescheinigung erhalten?", "Wer kann mir eine Teilnahmebescheinigung ausstellen?", "Ist es möglich mir eine Teilnahmebscheinigung auszustellen?", "Wer stellt Teilnahmebscheinigungen aus?"],
+    "responses": ["Wenn Sie eine Teilnahmebescheinigung erhalten möchten, dann melden Sie sich bei der Volkshochschule, wo der Kurs stattgefunden hatte. Diese wird einen die Teilnahmebescheinigung über Kurse zurückgeben können, die nicht älter als 6 Jahre her sind."],
+    "context_set": ""
+    },
+    {"tag": "beschwerdenkontakt",
+    "patterns": ["Ich habe ein Problem bezüglich der Kursleitende, wo kan ich mich beschweren?", "Bei wem können Beschwerden eingereicht werden?", "Ich will mich über die Art und Weise beschweren, wie der Kurs abgelaufen ist, wem soll ich schreiben?", "Ich habe ein Verbesserungswünsch, wo kann ich Ihn einreichen?", "Bei wem kann ich einen Verbesserungswunsch einreichen?"],
+    "responses": ["Bei Verbesserungswünschen oder Problemen, können Sie das bei der direkten Volkshochschule einreichen oder über das Kontaktformular: https://www.berlin.de/vhs-neukoelln/fuer-teilnehmende/formular.472002.php"],
+    "context_set": ""
+    },
+    {"tag": "tehnischeproblemekontakt",
+    "patterns": ["Ich habe tehnische Probleme, wer kann mir dabei helfen?", "Ich habe technische Beschwerden, wer ist für die Technik verantwortlich?", "Wer könnte mir bei meinen technischen Problemen helfen?", "Gibt es eine Person, die mich bei meinen technischen Problemen unterstützen könnte?", "Hilfe bei technischen Problemen"],
+    "responses": ["Wenn es technische Probleme sind, die die Cloud, BBB oder vhsit.berlin.de betreffen, dann melden Sie sich bei der E-Mail Adresse vhs-it@vhs-servicezentrum.berlin.de und bei weiteren Beschwerden melden Sie sich bei der IT-Abteilung der Volkshochschule, bei dem der Kurs stattfinden soll."],
+    "context_set": ""
+    },
+    {"tag": "kursleitungnichterreichbar",
+    "patterns": ["Ich kann die Kursleitung nicht erreichen und ich weiß nicht wo der Kursstattfinden wird, was soll ich tun?", "Kursleiter*in ist nicht erreichbar, an wen soll ich mich wenden?", "Die Kursleiter antwoten mir nicht, was soll ich tun?", "Bei wem soll ich mich melden, wenn der Kursleiter nicht erreichbar ist?", "Wer kann mir meine Fragen beantworten, wenn die Kursleiterin nicht erreichbar ist?"],
+    "responses": ["Melden Sie sich bei der Volkshochschule, wo der Kurs stattfindet oder stattfindedn soll und sie werden Ihnen eine weitere Auskunft geben können :)"],
+    "context_set": ""
+    },
+    {"tag": "kursleiterinwerden",
+    "patterns": ["Wie kann ich Kursleiter*in werden?", "Kann ich Kursleiter werden?", "Besteht die Möglichkeit sich als Kursleiterin bewerben zu können?", "Wie wird man Kursleiter*in?", "Wo muss ich mich melden, wenn ich Kursleiter werden möchte?"],
+    "responses": ["Schreiben Sie eine Mail an die Volkshochschulen, wo Sie gerne einen Kurs führen würden, vereinbaren Sie einen Termin mit der VHS und dann können Sie schon Ihren Kursplan besprechen und starten."],
+    "context_set": ""
     }
 ]}
