@@ -1,4 +1,5 @@
 import nltk
+#das auskommentierte muss ausgeführt werden, wenn die Fehlermeldung auftaucht, dass punkt nicht installiert worden ist
 #nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
@@ -92,12 +93,12 @@ net = tflearn.regression(net)
 # Model wird angewandt
 model = tflearn.DNN(net)
 
-# ''try:
-#     model.load("model.tflearn")
-# except:''
+try:
+    model.load("model.tflearn")
+except:
     #n_epoch bedeutet wie oft das Modell die Daten sehen wird
-model.fit(training, output, n_epoch = 1000, batch_size=8, show_metric=True)
-model.save("model.tflearn")
+    model.fit(training, output, n_epoch = 1000, batch_size=8, show_metric=True)
+    model.save("model.tflearn")
     # Damit das Modell nicht jedes mal abgespielt werden muss, kann die gespeicherte Version verwendet werden
 # macht dasselbe wie mit den vorhandenen Datensatz, er nimmt die Eingabe und untersucht welche Wörter wie oft vorkommen
 def bag_of_words(s, words):
